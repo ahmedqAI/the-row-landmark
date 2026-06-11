@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ذا رو لاندبارك (The Row Landmark) - تحفة معمارية معاصرة تجمع بين الفخامة السكنية والابتكار التجاري. استكشف الرندرات التفصيلية ليلاً ونهاراً.">
+    <title>ذا رو لاندبارك | تحفة معمارية معاصرة</title>
+    <!-- Google Fonts: Tajawal & Playfair Display for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Navbar -->
+    <nav class="navbar" id="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">THE ROW</span>
+                <span class="logo-subtext">LANDMARK</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">الرئيسية</a></li>
+                <li><a href="#philosophy">فلسفة التصميم</a></li>
+                <li><a href="#gallery">معرض المعاينة</a></li>
+                <li><a href="#details">التفاصيل المعمارية</a></li>
+                <li><a href="#specs">المواصفات</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="quick-theme-toggle" class="theme-btn" title="تبديل الإضاءة ليلاً/نهاراً">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>عرض ليلي</span>
+                </button>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="فتح القائمة">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Video -->
+    <header class="hero" id="hero">
+        <div class="video-background-container">
+            <video autoplay loop muted playsinline id="hero-video" class="hero-video">
+                <source src="Video Reader.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">تحفة هندسية تعيد تعريف الأفق العمراني</p>
+            <h1 class="hero-title">ذا رو لاندبارك</h1>
+            <h2 class="hero-english-title">THE ROW LANDMARK</h2>
+            <p class="hero-tagline">تناغم استثنائي بين فخامة المسكن وريادة الأعمال، مجسّد بتفاصيل معمارية تجمع بين حجر الترافرتين الطبيعي والزجاج الإنشائي الممتد.</p>
+            <div class="hero-cta-group">
+                <a href="#gallery" class="btn btn-primary">اكتشف المعرض التفاعلي</a>
+                <a href="#philosophy" class="btn btn-secondary">فلسفة التصميم</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>اسحب للأسفل</span>
+            <div class="mouse-icon">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Design Philosophy Section -->
+    <section class="philosophy" id="philosophy">
+        <div class="section-container">
+            <div class="philosophy-grid">
+                <div class="philosophy-text reveal-on-scroll">
+                    <span class="section-tag">الفلسفة المعمارية</span>
+                    <h2 class="section-title">حوار بين الحجر والزجاج والضوء</h2>
+                    <p class="section-desc">
+                        ينطلق مشروع <strong>"ذا رو لاندبارك"</strong> من رؤية معمارية تهدف إلى دمج الأصالة بالحداثة. تم اختيار حجر الترافرتين الدافئ ليكسو الواجهات الخارجية، مما يمنح المبنى هيبة ووقاراً يستمد روحه من الطبيعة، بينما تتداخل الواجهات الزجاجية الهيكلية الممتدة والألواح المعدنية البرونزية لتجسّد الابتكار والعصرنة.
+                    </p>
+                    <div class="philosophy-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-num">01</span>
+                            <div class="highlight-info">
+                                <h3>التباين البصري والارتفاع</h3>
+                                <p>زوايا حادة وشطفات هندسية مدروسة تمنح أبعاداً ديناميكية متغيرة حسب زاوية الرؤية وسقوط الضوء.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-num">02</span>
+                            <div class="highlight-info">
+                                <h3>أولوية الإضاءة الطبيعية</h3>
+                                <p>تصاميم الواجهات تضمن تدفق الإضاءة الطبيعية لجميع الوحدات السكنية والمساحات التجارية بذكاء.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="philosophy-images reveal-on-scroll">
+                    <div class="image-wrapper main-image">
+                        <img src="الواجهه الشاملة.jpeg" alt="الواجهة الشاملة لمشروع ذا رو لاندبارك">
+                        <span class="image-caption">الواجهة الشاملة للمشروع نهاراً</span>
+                    </div>
+                    <div class="image-wrapper sub-image">
+                        <img src="لقطة المنظور الواسع.jpeg" alt="لقطة المنظور الواسع للمشروع">
+                        <span class="image-caption">تكامل المبنى مع الشارع العام</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Rendering Gallery (The Core Feature) -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-container">
+            <div class="gallery-header reveal-on-scroll">
+                <span class="section-tag">معرض المعاينة التفاعلي</span>
+                <h2 class="section-title">تأمل المشروع بنبض النهار وسحر الليل</h2>
+                <p class="section-desc">
+                    لقد قمنا بتصميم واجهة تبديل تفاعلية لتسمح لك برؤية الفروقات الدقيقة والمبهرة بين انعكاسات الشمس في وضح النهار وسحر الإضاءة الهندسية المتقنة في الليل للمشروع بأكمله.
+                </p>
+                
+                <!-- Gallery Control Toggle Switch -->
+                <div class="gallery-toggle-container">
+                    <button class="gallery-toggle-btn active" data-mode="day">
+                        <i class="fa-solid fa-sun"></i>
+                        <span>أجواء النهار</span>
+                    </button>
+                    <button class="gallery-toggle-btn" data-mode="night">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>أجواء الليل</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Daytime Renders Grid (Shown by default) -->
+            <div class="gallery-grid active" id="daytime-grid">
+                <!-- Card 1 -->
+                <div class="gallery-card reveal-on-scroll" data-index="0">
+                    <div class="card-img-wrapper">
+                        <img src="الواجهه الشاملة.jpeg" alt="الواجهه الشاملة">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>الواجهة الشاملة للمشروع</h3>
+                        <p>رؤية متكاملة تبرز التفاصيل الهندسية للكتل والخطوط العمودية.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="gallery-card reveal-on-scroll" data-index="1">
+                    <div class="card-img-wrapper">
+                        <img src="عين طائر.jpeg" alt="عين طائر">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>عين الطائر - منظور جوي عام</h3>
+                        <p>رؤية شاملة تبيّن توزيع الكتلة المعمارية وتكاملها مع النسيج المحيط.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="gallery-card reveal-on-scroll" data-index="2">
+                    <div class="card-img-wrapper">
+                        <img src="لقطة المنظور الواسع.jpeg" alt="لقطة المنظور الواسع">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>لقطة المنظور الواسع</h3>
+                        <p>تكامل ديناميكي يبرز علاقة المشروع بالشارع الرئيسي والأرصفة المحيطة.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="gallery-card reveal-on-scroll" data-index="3">
+                    <div class="card-img-wrapper">
+                        <img src="عين نملة.jpeg" alt="عين نملة">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>عين نملة - منظور سفلي شاهق</h3>
+                        <p>زاوية درامية تبرز فخامة الارتفاع وضخامة الكتل الحجرية.</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="gallery-card reveal-on-scroll" data-index="4">
+                    <div class="card-img-wrapper">
+                        <img src="التفاصيل السكنية .jpeg" alt="التفاصيل السكنية">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>التفاصيل والشرائح السكنية</h3>
+                        <p>تقريب بصري يوضح النوافذ والشرائح اللوفرية المانعة للشمس بأناقتها المعهودة.</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="gallery-card reveal-on-scroll" data-index="5">
+                    <div class="card-img-wrapper">
+                        <img src="لقطة مقربة للشطفة التجارية.jpeg" alt="لقطة مقربة للشطفة التجارية">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>لقطة مقربة للشطفة التجارية</h3>
+                        <p>تفاصيل الزاوية التجارية المائلة والشاشات الخارجية لعرض العلامات الراقية.</p>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="gallery-card reveal-on-scroll" data-index="6">
+                    <div class="card-img-wrapper">
+                        <img src="لقطة مقربة للمدخل المزدوج (Close-Up Double-Height Grand Entrance.jpeg" alt="لقطة مقربة للمدخل المزدوج">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>المدخل المزدوج الفاخر</h3>
+                        <p>مدخل سكني بارتفاع طابقين يمنح الساكنين تجربة وصول ملوكية وفخامة غير مسبوقة.</p>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="gallery-card reveal-on-scroll" data-index="7">
+                    <div class="card-img-wrapper">
+                        <img src="عين طائر 2.jpeg" alt="عين طائر 2">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>عين الطائر 2 - منظور علوي بزاوية مختلفة</h3>
+                        <p>لقطة تبرز تصميم السقف العلوي، المساحات المفتوحة، وتنسيق الأسطح.</p>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="gallery-card reveal-on-scroll" data-index="8">
+                    <div class="card-img-wrapper">
+                        <img src="2 عين نملة.jpeg" alt="2 عين نملة">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>عين نملة 2 - دراما الزوايا الحادة</h3>
+                        <p>إبراز الكسوة الخارجية الفاخرة وتدرج الطوابق نحو السماء نهاراً.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nighttime Renders Grid (Hidden by default) -->
+            <div class="gallery-grid" id="nighttime-grid">
+                <!-- Card 1 -->
+                <div class="gallery-card" data-index="0">
+                    <div class="card-img-wrapper">
+                        <img src="render ✅ - night/عين طائر.jpeg" alt="عين طائر ليلاً">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>عين الطائر ليلاً</h3>
+                        <p>منظور جوي يظهر الإضاءة العمرانية الذكية وتألق البرج في سماء المدينة.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="gallery-card" data-index="1">
+                    <div class="card-img-wrapper">
+                        <img src="render ✅ - night/شارع.jpeg" alt="شارع ليلاً">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>مشهد الواجهة والشارع ليلاً</h3>
+                        <p>تناغم أضواء السيارات مع الإضاءة الخطية للواجهات وحيوية المحيط.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="gallery-card" data-index="2">
+                    <div class="card-img-wrapper">
+                        <img src="render ✅ - night/مدخل.jpeg" alt="مدخل ليلاً">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>المدخل الرئيسي والإنارة الليلية</h3>
+                        <p>دفء الإنارة الداخلية المنعكسة عبر الزجاج بارتفاع طابقين يرحب بالزوار فخامةً ودفئاً.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="gallery-card" data-index="3">
+                    <div class="card-img-wrapper">
+                        <img src="render ✅ - night/الشارع جاني.jpeg" alt="الشارع الجانبي ليلاً">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-maximize"></i>
+                            <span>تكبير الصورة</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>الواجهة الجانبية والشارع الفرعي</h3>
+                        <p>امتداد التصميم والإضاءة الخارجية الممتدة على طول الشارع الجانبي بهدوء ورقي.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Detail Highlights Sections -->
+    <section class="details" id="details">
+        <div class="section-container">
+            <div class="details-header reveal-on-scroll">
+                <span class="section-tag">روائع تفصيلية</span>
+                <h2 class="section-title">التفاصيل التي تصنع التميز المعماري</h2>
+                <p class="section-desc">مستويات تشطيب رفيعة وزوايا إنشائية فريدة تم تنفيذ رندراتها بدقة بالغة لنقل الواقعية بكل تفاصيلها.</p>
+            </div>
+
+            <!-- Detail 1: Double Height Entrance -->
+            <div class="detail-block reveal-on-scroll">
+                <div class="detail-image">
+                    <img src="لقطة مقربة للمدخل المزدوج (Close-Up Double-Height Grand Entrance.jpeg" alt="المدخل المزدوج الارتفاع الفاخر">
+                </div>
+                <div class="detail-content">
+                    <div class="detail-num">01</div>
+                    <h3>المدخل السكني المزدوج الارتفاع</h3>
+                    <p>
+                        يستقبلك المشروع بمدخل بهو (Lobby) سكني شاهق الارتفاع يمتد لستة أمتار، مغطى بزجاج إنشائي كامل بدون أعمدة لحجب الرؤية، مما يمنح إحساساً بالرحابة والاتصال البصري اللامتناهي. تم تكسية جدران المدخل بألواح الرخام الفاخرة المضاءة بشكل مخفي ليندمج التصميم الداخلي بالتصميم الخارجي بحرفية بالغة.
+                    </p>
+                    <ul class="detail-features">
+                        <li><i class="fa-solid fa-circle-check"></i> ارتفاع مزدوج كامل (Double-Height)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> زجاج إنشائي عالي الشفافية ومقاوم للحرارة الصوت</li>
+                        <li><i class="fa-solid fa-circle-check"></i> مدخل منفصل تماماً عن حركة التسوق والمحلات</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Detail 2: Commercial Chamfer -->
+            <div class="detail-block reverse reveal-on-scroll">
+                <div class="detail-image">
+                    <img src="لقطة مقربة للشطفة التجارية.jpeg" alt="شطفة الزاوية التجارية">
+                </div>
+                <div class="detail-content">
+                    <div class="detail-num">02</div>
+                    <h3>شطفة الزاوية التجارية الديناميكية</h3>
+                    <p>
+                        تصميم الزاوية المائلة (Chamfer) للمبنى يعطي زوايا رؤية أوسع للمحلات والمعارض الفاخرة في الدورين الأرضي والأول. هذه الشطفة الهندسية تعمل كشاشة عرض بصرية أنيقة، وتوفر مساحات ممتازة لوضع اللوحات الترويجية الراقية، مما يعزز القيمة الاستثمارية والجاذبية التجارية للمشروع للماركات العالمية.
+                    </p>
+                    <ul class="detail-features">
+                        <li><i class="fa-solid fa-circle-check"></i> زاوية رؤية 135 درجة لزيادة الجاذبية البصرية</li>
+                        <li><i class="fa-solid fa-circle-check"></i> مساحات مخصصة للدعاية الراقية واللوحات الرقمية</li>
+                        <li><i class="fa-solid fa-circle-check"></i> اتصال انسيابي بين الشارع العام والشارع الجانبي</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Detail 3: Residential Balconies & Screens -->
+            <div class="detail-block reveal-on-scroll">
+                <div class="detail-image">
+                    <img src="التفاصيل السكنية .jpeg" alt="التفاصيل السكنية والشرائح">
+                </div>
+                <div class="detail-content">
+                    <div class="detail-num">03</div>
+                    <h3>الشرائح اللوفرية والخصوصية السكنية</h3>
+                    <p>
+                        تتميز الواجهة السكنية بوجود شرائح حماية عمودية متحركة وثابتة بلون البرونز المطفي لتعمل كعازل طبيعي لأشعة الشمس المباشرة وحامي للخصوصية دون حجب المشهد الخارجي الجميل. إن تكرار هذه الخطوط العمودية يضفي رشاقة للبرج، وينسجم بشكل مدهش مع إضاءات الليل والنهار لتكوين لوحة متغيرة ومستمرة الجمال.
+                    </p>
+                    <ul class="detail-features">
+                        <li><i class="fa-solid fa-circle-check"></i> تحكم ذكي بمستويات الظلال والإضاءة</li>
+                        <li><i class="fa-solid fa-circle-check"></i> حماية خصوصية العائلات بالكامل داخل الشقق السكنية</li>
+                        <li><i class="fa-solid fa-circle-check"></i> تكسية حجرية بملمس طبيعي (Natural Travertine Texture)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spec Grid Section -->
+    <section class="specs" id="specs">
+        <div class="section-container">
+            <div class="specs-header reveal-on-scroll">
+                <span class="section-tag">بطاقة البيانات الفنية</span>
+                <h2 class="section-title">المواصفات الفنية والهندسية للمشروع</h2>
+                <p class="section-desc">مزيج متكامل من المواد الفاخرة والتقنيات الذكية لضمان الاستدامة والفخامة عبر الأجيال.</p>
+            </div>
+
+            <div class="specs-grid reveal-on-scroll">
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-building"></i></div>
+                    <h3>تصنيف الاستخدام</h3>
+                    <p class="spec-value">مختلط (تجاري / سكني)</p>
+                    <p class="spec-detail">محلات راقية بالدور الأرضي ومكاتب وشقق فاخرة بالأعلى.</p>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-gem"></i></div>
+                    <h3>مواد الواجهات</h3>
+                    <p class="spec-value">ترافرتين طبيعي وزجاج مزدوج</p>
+                    <p class="spec-detail">حجر معالج لمقاومة العوامل الجوية مع إطارات ألومنيوم برونزية متينة.</p>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>أنظمة الإنارة</h3>
+                    <p class="spec-value">إنارة ليد خطية ذكية</p>
+                    <p class="spec-detail">أنظمة إنارة ليلية خافتة مدمجة بالواجهات تبرز الخطوط دون وهج مزعج.</p>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>الخصوصية والأمان</h3>
+                    <p class="spec-value">أنظمة ذكية وشرائح ليد</p>
+                    <p class="spec-detail">مداخل مؤمنة بالكامل بالبطاقات وكاميرات متطورة للمدخل السكني.</p>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>كفاءة الطاقة</h3>
+                    <p class="spec-value">استدامة معمارية ممتازة</p>
+                    <p class="spec-detail">زجاج عازل يقلل تكلفة التكييف بنسبة تصل إلى 35% مع تهوية طبيعية ممتازة.</p>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-car"></i></div>
+                    <h3>مواقف السيارات</h3>
+                    <p class="spec-value">طوابق سفلية مجهزة</p>
+                    <p class="spec-detail">مواقف سيارات تحت الأرض مجهزة بشواحن للسيارات الكهربائية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-on-scroll">
+                    <span class="section-tag">استفسر الآن</span>
+                    <h2 class="section-title">امتلك مساحتك في ذا رو لاندبارك</h2>
+                    <p class="section-desc">
+                        يسعد فريق المبيعات المعمارية والاستثمارية لدينا بالرد على جميع استفساراتكم وترتيب جولات معاينة خاصة ومناقشة تفاصيل الشراء أو التأجير للمحلات التجارية والشقق السكنية.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>الهاتف والمبيعات</h4>
+                                <p>+966 500 000 000</p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>البريد الإلكتروني للمبيعات</h4>
+                                <p>sales@therowlandmark.com</p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i class="fa-solid fa-map-pin"></i>
+                            <div>
+                                <h4>مكتب المعاينة الرئيسي</h4>
+                                <p>تقاطع الشارع التجاري الرئيسي، الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container reveal-on-scroll">
+                    <form id="inquiry-form" class="inquiry-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">الاسم الكامل</label>
+                                <input type="text" id="form-name" required placeholder="مثال: محمد عبد العزيز">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">رقم الهاتف</label>
+                                <input type="tel" id="form-phone" required placeholder="مثال: +966 50 123 4567">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">البريد الإلكتروني</label>
+                            <input type="email" id="form-email" required placeholder="مثال: email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-interest">نوع الاستفسار والاهتمام</label>
+                            <select id="form-interest">
+                                <option value="residential">الشقق السكنية الفاخرة</option>
+                                <option value="commercial">المعارض والمحلات التجارية</option>
+                                <option value="penthouse">شقق البنتهاوس العلوية</option>
+                                <option value="investment">فرص الاستثمار والتطوير</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">رسالتك واستفسارك</label>
+                            <textarea id="form-message" rows="4" placeholder="اكتب استفسارك بالتفصيل وسيقوم المستشار العقاري بالتواصل معك..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>إرسال طلب المعاينة والمعلومات</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <div id="form-success" class="form-success-alert">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3>نشكرك على اهتمامك بذا رو لاندبارك</h3>
+                        <p>تم إرسال طلبك ومواصفات اهتمامك بنجاح. سيقوم مستشارنا العقاري بالاتصال بك خلال 24 ساعة لترتيب الموعد ومناقشة تفاصيل الاستثمار.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-text">THE ROW</span>
+                    <span class="logo-subtext">LANDMARK</span>
+                </a>
+                <p>صُمم بهندسة معاصرة تتحدى الزمن لتجمع الأناقة والفائدة الاستثمارية الكبرى.</p>
+            </div>
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#philosophy">فلسفة التصميم</a></li>
+                    <li><a href="#gallery">معرض المعاينة</a></li>
+                    <li><a href="#details">التفاصيل المعمارية</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>مواقع التواصل</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2026 ذا رو لاندبارك. تم التطوير كواجهة عرض معمارية فاخرة.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Lightbox Modal -->
+    <div class="lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="مشاهدة الصورة بالتفصيل">
+        <button class="lightbox-close" id="lightbox-close-btn" aria-label="إغلاق المعاينة"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev-btn" aria-label="الصورة السابقة"><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next-btn" aria-label="الصورة التالية"><i class="fa-solid fa-chevron-left"></i></button>
+        
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="صورة مكبرة">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title">عنوان الصورة</h3>
+                <p id="lightbox-desc">وصف الصورة التفصيلي</p>
+                <div class="lightbox-counter"><span id="lightbox-current">1</span> / <span id="lightbox-total">9</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="app.js"></script>
+</body>
+</html>
