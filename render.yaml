@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: the-row-landmark
+    env: static
+    buildCommand: ""
+    publishDir: "."
